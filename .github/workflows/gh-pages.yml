@@ -3,7 +3,11 @@ name: Build and Deploy Sphinx docs
 on:
   push:
     branches:
-      - main  # main ブランチに push されたときに実行
+      - main
+
+# これを追加
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
@@ -24,17 +28,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build Sphinx
-        # conf.py がリポジトリ直下にあるので working-directory は .
         working-directory: .
         run: |
-          # Makefile があるなら:
-          # make html
-          # ない場合も確実に動くように sphinx-build を使う:
           sphinx-build -b html . _build/html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Sphinx の出力先が _build/html なのでここを指定
           publish_dir: ./_build/html
