@@ -27,7 +27,7 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search"  style="background: #2980B9" >
+        <div class="wy-side-nav-search"  style="background: #005BAC" >
 
           
           
@@ -60,7 +60,7 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #005BAC" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">MarginX</a>
       </nav>
@@ -86,11 +86,10 @@
 <h2>ダウンロード及びコンパイル<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>MarginX のソースはGitHub(<a class="reference external" href="https://github.com/Yamanashi-laboratory/MarginX">https://github.com/Yamanashi-laboratory/MarginX</a>)で公開されている。
 以下、MarginX の導入方法について説明する。
-以下のコマンドで、カレントディレクトリにMarginX をダウンロードする。
-.. code-block:: bash</p>
-<blockquote>
-<div><p>git clone <a class="reference external" href="https://github.com/Yamanashi-laboratory/MarginX">https://github.com/Yamanashi-laboratory/MarginX</a></p>
-</div></blockquote>
+以下のコマンドで、カレントディレクトリにMarginX をダウンロードする。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Yamanashi-laboratory/MarginX
+</pre></div>
+</div>
 <p>次に、ダウンロードしたフォルダに移動し、以下の手順でbuild フォルダを作成してそこ
 に移動する。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>MarginX
@@ -98,13 +97,14 @@ mkdir<span class="w"> </span>build
 <span class="nb">cd</span><span class="w"> </span>build
 </pre></div>
 </div>
+<p>その後、以下の手順でコンパイルを行う。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>..
 cmake<span class="w"> </span>--build<span class="w"> </span>.
 </pre></div>
 </div>
 <p>コンパイルが完了されると、MarginX/build 下に実行ファイル”MarginX”が生成される。
-生成されたMarginX の実行ファイルを実行すると、図2.1 のような出力が得られるはず
-である。</p>
+パスを通したりシンボリックリンクを作成するなどしてこの実行ファイルを用意に実行できるように
+しておくとよい。</p>
 </section>
 </section>
 
