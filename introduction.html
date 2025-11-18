@@ -47,8 +47,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="hajimeni.html">はじめに</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">導入方法</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">前提条件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">インストール手順</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">ダウンロード及びコンパイル</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="input.html">入力ファイル</a></li>
@@ -83,22 +82,29 @@
              
   <section id="id1">
 <h1>導入方法<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p>このツールを導入するための手順を説明します。</p>
 <section id="id2">
-<h2>前提条件<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p>Python 3.9 以上</p></li>
-</ul>
-</section>
-<section id="id3">
-<h2>インストール手順<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>cmakeを使用してビルドできます。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>build
+<h2>ダウンロード及びコンパイル<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>MarginX のソースはGitHub(<a class="reference external" href="https://github.com/Yamanashi-laboratory/MarginX">https://github.com/Yamanashi-laboratory/MarginX</a>)で公開されている。
+以下、MarginX の導入方法について説明する。
+以下のコマンドで、カレントディレクトリにMarginX をダウンロードする。
+.. code-block:: bash</p>
+<blockquote>
+<div><p>git clone <a class="reference external" href="https://github.com/Yamanashi-laboratory/MarginX">https://github.com/Yamanashi-laboratory/MarginX</a></p>
+</div></blockquote>
+<p>次に、ダウンロードしたフォルダに移動し、以下の手順でbuild フォルダを作成してそこ
+に移動する。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>MarginX
+mkdir<span class="w"> </span>build
 <span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>..
 cmake<span class="w"> </span>--build<span class="w"> </span>.
 </pre></div>
 </div>
+<p>コンパイルが完了されると、MarginX/build 下に実行ファイル”MarginX”が生成される。
+生成されたMarginX の実行ファイルを実行すると、図2.1 のような出力が得られるはず
+である。</p>
 </section>
 </section>
 
