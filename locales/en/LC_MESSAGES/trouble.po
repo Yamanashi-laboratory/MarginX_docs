@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Sho Matsuoka
+# This file is distributed under the same license as the MarginX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MarginX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-20 13:20+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../trouble.rst:2
+msgid "トラブルシューティング"
+msgstr ""
+
+#: ../../trouble.rst:4
+msgid "問題が発生した場合の解決策を記載します。"
+msgstr ""
+
+#: ../../trouble.rst:7
+msgid "エラー: `ModuleNotFoundError`"
+msgstr ""
+
+#: ../../trouble.rst:8
+msgid "依存ライブラリが正しくインストールされていません。再度インストール手順を確認してください。"
+msgstr ""
+

@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Sho Matsuoka
+# This file is distributed under the same license as the MarginX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MarginX \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-20 13:20+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../introduction.rst:3
+msgid "導入方法"
+msgstr ""
+
+#: ../../introduction.rst:7
+msgid "ダウンロード及びコンパイル"
+msgstr ""
+
+#: ../../introduction.rst:9
+msgid ""
+"MarginX のソースはGitHub(https://github.com/Yamanashi-"
+"laboratory/MarginX)で公開されている。 以下、MarginX の導入方法について説明する。 "
+"以下のコマンドで、カレントディレクトリにMarginX をダウンロードする。"
+msgstr ""
+
+#: ../../introduction.rst:17
+msgid "次に、ダウンロードしたフォルダに移動し、以下の手順でbuild フォルダを作成してそこ に移動する。"
+msgstr ""
+
+#: ../../introduction.rst:26
+msgid "その後、以下の手順でコンパイルを行う。"
+msgstr ""
+
+#: ../../introduction.rst:33
+msgid ""
+"コンパイルが完了されると、MarginX/build 下に実行ファイル”MarginX”が生成される。 "
+"パスを通したりシンボリックリンクを作成するなどしてこの実行ファイルを用意に実行できるように しておくとよい。"
+msgstr ""
+

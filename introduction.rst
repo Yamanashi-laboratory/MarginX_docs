@@ -4,7 +4,7 @@
 
 
 ダウンロード及びコンパイル
-------------------------
+-----------------------------
 
 MarginX のソースはGitHub(https://github.com/Yamanashi-laboratory/MarginX)で公開されている。
 以下、MarginX の導入方法について説明する。

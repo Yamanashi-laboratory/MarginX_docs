@@ -21,10 +21,20 @@ extensions = [
     'sphinx_rtd_theme',
 ]
 
+# --- 多言語対応設定を追加 --- #
+
+# デフォルト言語（今の本文が日本語なら 'ja' ）
+language = 'ja'
+
+# 翻訳ファイル(.po)を置くディレクトリ
+locale_dirs = ['locales/']
+
+# ファイルごとに .po を作る
+gettext_compact = False
+
 templates_path = ['_templates']
 exclude_patterns = []
 
-language = 'en'
 
 # -- Options for HTML output -------------------------------------------------
 

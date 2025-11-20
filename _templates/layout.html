@@ -1,0 +1,67 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <style>
+    .lang-switcher {
+      position: fixed;
+      top: 0.7em;
+      right: 1.5em;
+      font-size: 0.9em;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+    }
+    .lang-switcher a {
+      margin-left: 0.3em;
+      text-decoration: none;
+    }
+    .lang-switcher .active {
+      font-weight: bold;
+      cursor: default;
+    }
+  </style>
+{% endblock %}
+
+{# ここがポイント：body ではなく extrabody を上書きする #}
+{% block extrabody %}
+  {{ super() }}
+
+  <div class="lang-switcher">
+    <span id="lang-ja-link">日本語</span> |
+    <span id="lang-en-link">English</span>
+  </div>
+
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var jaEl = document.getElementById('lang-ja-link');
+      var enEl = document.getElementById('lang-en-link');
+
+      var isJa = path.indexOf('/ja/') !== -1;
+      var isEn = path.indexOf('/en/') !== -1;
+
+      // /ja/ <-> /en/ の相互変換
+      var toJa = path.replace('/en/', '/ja/');
+      var toEn = path.replace('/ja/', '/en/');
+
+      if (isJa) {
+        jaEl.classList.add('active');
+        enEl.innerHTML = '<a href="' + toEn + '">English</a>';
+      } else if (isEn) {
+        enEl.classList.add('active');
+        jaEl.innerHTML = '<a href="' + toJa + '">日本語</a>';
+      } else {
+        // /ja/ /en/ がURLに入っていない場合（トップ直下など）
+        // ベースパスを推定して ja/en の index へリンク
+        var base = path;
+        if (!base.endsWith('/')) {
+          base = base.replace(/index\.html$/, '');
+        }
+        jaEl.innerHTML = '<a href="' + base + 'ja/index.html">日本語</a>';
+        enEl.innerHTML = '<a href="' + base + 'en/index.html">English</a>';
+      }
+    })();
+  </script>
+{% endblock %}
