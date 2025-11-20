@@ -37,6 +37,26 @@ jobs:
         run: |
           sphinx-build -b html -D language=en . _build/html/en
 
+      - name: Create root index.html redirect
+        run: |
+          mkdir -p _build/html
+          cat << 'EOF' > _build/html/index.html
+          <!DOCTYPE html>
+          <html lang="ja">
+          <head>
+            <meta charset="utf-8">
+            <title>MarginX documentation</title>
+            <!-- 0秒後に /ja/ にリダイレクト -->
+            <meta http-equiv="refresh" content="0; url=./ja/">
+            <link rel="canonical" href="./ja/">
+          </head>
+          <body>
+            <p>自動的に <a href="./ja/">日本語版ドキュメント</a> に移動します。</p>
+            <p>移動しない場合は、上のリンクをクリックしてください。</p>
+          </body>
+          </html>
+          EOF
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
