@@ -24,7 +24,7 @@ msgid "はじめに"
 msgstr "Introduction"
 
 #: ../../index.rst:9
-msgid "導入方法"
+msgid "ビルドとインストール"
 msgstr "Build and Install"
 
 #: ../../index.rst:9
