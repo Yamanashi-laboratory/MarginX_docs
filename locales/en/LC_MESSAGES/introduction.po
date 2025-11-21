@@ -20,8 +20,8 @@ msgstr ""
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../introduction.rst:3
-msgid "ビルドとインストール"
-msgstr "Build and Install"
+msgid "導入方法"
+msgstr ""
 
 #: ../../introduction.rst:7
 msgid "ダウンロード及びコンパイル"
@@ -47,4 +47,7 @@ msgid ""
 "コンパイルが完了されると、MarginX/build 下に実行ファイル”MarginX”が生成される。 "
 "パスを通したりシンボリックリンクを作成するなどしてこの実行ファイルを用意に実行できるように しておくとよい。"
 msgstr ""
+
+#~ msgid "ビルドとインストール"
+#~ msgstr "Build and Install"
 

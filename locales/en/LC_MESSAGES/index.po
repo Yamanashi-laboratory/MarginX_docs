@@ -24,7 +24,7 @@ msgid "はじめに"
 msgstr "Introduction"
 
 #: ../../index.rst:9
-msgid "ビルドとインストール"
+msgid "導入方法"
 msgstr "Build and Install"
 
 #: ../../index.rst:9
@@ -41,7 +41,7 @@ msgstr "FAQ"
 
 #: ../../index.rst:9
 msgid "トラブルシューティング"
-msgstr "Rrouble shooting"
+msgstr "Trouble shooting"
 
 #: ../../index.rst:9
 msgid "目次:"
@@ -66,4 +66,7 @@ msgstr ":ref:`modindex"
 #: ../../index.rst:27
 msgid ":ref:`search`"
 msgstr ":ref:`search`"
+
+#~ msgid "ビルドとインストール"
+#~ msgstr "Build and Install"
 
