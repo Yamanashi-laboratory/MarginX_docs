@@ -20,8 +20,8 @@ msgstr ""
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../introduction.rst:3
-msgid "導入方法"
-msgstr ""
+msgid "ビルドとインストール"
+msgstr "Build and Install"
 
 #: ../../introduction.rst:7
 msgid "ダウンロード及びコンパイル"
