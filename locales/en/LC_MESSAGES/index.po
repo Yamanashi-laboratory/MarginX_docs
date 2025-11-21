@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../index.rst:9
 msgid "はじめに"
-msgstr "hajimeni"
+msgstr "Introduction"
 
 #: ../../index.rst:9
 msgid "導入方法"
-msgstr "Introduction"
+msgstr "Build and Install"
 
 #: ../../index.rst:9
 msgid "入力ファイル"
@@ -41,7 +41,7 @@ msgstr "FAQ"
 
 #: ../../index.rst:9
 msgid "トラブルシューティング"
-msgstr "trouble shooting"
+msgstr "Rrouble shooting"
 
 #: ../../index.rst:9
 msgid "目次:"
