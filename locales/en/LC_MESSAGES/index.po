@@ -29,11 +29,11 @@ msgstr "Build and Install"
 
 #: ../../index.rst:9
 msgid "入力ファイル"
-msgstr "input files"
+msgstr "Input files"
 
 #: ../../index.rst:9
 msgid "実行とモード"
-msgstr "execution and modes"
+msgstr "Execution and modes"
 
 #: ../../index.rst:9
 msgid "FAQ"
@@ -45,28 +45,28 @@ msgstr "Trouble shooting"
 
 #: ../../index.rst:9
 msgid "目次:"
-msgstr "index"
+msgstr "Index"
 
 #: ../../index.rst:7
 msgid "Welcome to MarginX's documentation!"
-msgstr "Welcome to MarginX's documentation!"
+msgstr ""
 
 #: ../../index.rst:23
 msgid "Indices and tables"
-msgstr "Indices and tables"
+msgstr ""
 
 #: ../../index.rst:25
 msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
+msgstr ""
 
 #: ../../index.rst:26
 msgid ":ref:`modindex`"
-msgstr ":ref:`modindex"
+msgstr ""
 
 #: ../../index.rst:27
 msgid ":ref:`search`"
-msgstr ":ref:`search`"
+msgstr ""
 
-#~ msgid "ビルドとインストール"
+#~ msgid "導入方法"
 #~ msgstr "Build and Install"
 
