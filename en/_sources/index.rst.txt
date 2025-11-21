@@ -11,7 +11,7 @@ Welcome to MarginX's documentation!
    :caption: 目次:
 
    はじめに <hajimeni>
-   導入方法 <introduction>
+   ビルドとインストール <introduction>
    入力ファイル <input>
    実行とモード <execution>
    FAQ <faq>
